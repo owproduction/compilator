@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Kisl\\compilator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\LexicalAnalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\LexicalAnalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Integration\\code.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Integration\\code.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Lexem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\Lexem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\DataType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\DataType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Compiler.Lib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\Compiler.Lib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\CodeGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\CodeGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\SyntaxAnalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\SyntaxAnalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\Reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Lib\\NameTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Lib\\NameTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Integration\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Compiler.Integration.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:C#\\Compiler.Integration\\Compiler.Integration.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "code.txt",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\code.txt",
+              "RelativeDocumentMoniker": "C#\\Compiler.Integration\\code.txt",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\code.txt",
+              "RelativeToolTip": "C#\\Compiler.Integration\\code.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-05T09:46:46.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Compiler.Integration.csproj",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Compiler.Integration.csproj",
+              "RelativeDocumentMoniker": "C#\\Compiler.Integration\\Compiler.Integration.csproj",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Compiler.Integration.csproj",
+              "RelativeToolTip": "C#\\Compiler.Integration\\Compiler.Integration.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-05T09:27:23.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Program.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Integration\\Program.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Integration\\Program.cs",
+              "RelativeToolTip": "C#\\Compiler.Integration\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:26:12.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LexicalAnalyzer.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\LexicalAnalyzer.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\LexicalAnalyzer.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\LexicalAnalyzer.cs*",
+              "RelativeToolTip": "C#\\Compiler.Lib\\LexicalAnalyzer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:36.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NameTable.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\NameTable.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\NameTable.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\NameTable.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\NameTable.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:36.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SyntaxAnalyzer.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\SyntaxAnalyzer.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\SyntaxAnalyzer.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\SyntaxAnalyzer.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\SyntaxAnalyzer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:35.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reader.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Reader.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\Reader.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Reader.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\Reader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:34.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Compiler.Lib.csproj",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Compiler.Lib.csproj",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\Compiler.Lib.csproj",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Compiler.Lib.csproj",
+              "RelativeToolTip": "C#\\Compiler.Lib\\Compiler.Lib.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-28T11:11:32.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CodeGenerator.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\CodeGenerator.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\CodeGenerator.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\CodeGenerator.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\CodeGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:31.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataType.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\DataType.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\DataType.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\DataType.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\DataType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:11:30.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lexem.cs",
+              "DocumentMoniker": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Lexem.cs",
+              "RelativeDocumentMoniker": "C#\\Compiler.Lib\\Lexem.cs",
+              "ToolTip": "D:\\Kisl\\compilator\\C#\\Compiler.Lib\\Lexem.cs",
+              "RelativeToolTip": "C#\\Compiler.Lib\\Lexem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T09:48:40.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

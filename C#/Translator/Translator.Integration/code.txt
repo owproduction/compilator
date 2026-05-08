@@ -1,0 +1,9 @@
+Var x, y, z;
+
+Begin
+    x := 10;
+    y := 20;
+    z := x + y * 2;
+End;
+
+Print z;

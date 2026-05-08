@@ -32,7 +32,18 @@ void RunDosBoxTest(string fileName, string code)
 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 string sourceFilePath = Path.Combine(baseDirectory, SourceFileName + ".txt");
 string compiledFilePath = Path.Combine(baseDirectory, ProgramFileName + ".asm");
+
+if (!File.Exists(sourceFilePath))
+{
+    Console.WriteLine($"Файл не найден: {sourceFilePath}");
+    Console.WriteLine("Создаю тестовый файл...");
+    File.WriteAllText(sourceFilePath, "Var x, y, z;\r\n\r\nBegin\r\n    x := 10;\r\n    y := 20;\r\n    z := x + y * 2;\r\nEnd;\r\n\r\nPrint z;");
+}
+
 string sourceCode = File.ReadAllText(sourceFilePath);
+Console.WriteLine("Исходный код:");
+Console.WriteLine(sourceCode);
+Console.WriteLine("---");
 
 var syntaxAnalyzer = new SyntaxAnalyzer();
 try
@@ -40,10 +51,12 @@ try
     syntaxAnalyzer.Compile(sourceCode);
     var code = string.Join("\n", CodeGenerator.GetGeneratedCode());
     File.WriteAllText(compiledFilePath, code);
+    Console.WriteLine("Скомпилированный код:");
     Console.WriteLine(code);
-    RunDosBoxTest(ProgramFileName, code);   
+    RunDosBoxTest(ProgramFileName, code);
 }
 catch (Exception e)
 {
-    Console.WriteLine(e.Message);
+    Console.WriteLine($"Ошибка: {e.Message}");
+    Console.WriteLine($"Стек вызовов: {e.StackTrace}");
 }

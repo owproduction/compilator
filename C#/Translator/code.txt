@@ -1,6 +1,0 @@
-Var x, y: Logical number,sum,i,remainder, test :Integer;
-Begin
-    number := 12365;
-    test := (number + 1) * (2/number-5);
-End;
-Print test;

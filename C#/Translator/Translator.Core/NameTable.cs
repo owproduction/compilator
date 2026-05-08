@@ -14,8 +14,7 @@ public enum tCat
 public enum tType
 {
     None,
-    Int,
-    Bool
+    Int
 }
 
 /// <summary>
