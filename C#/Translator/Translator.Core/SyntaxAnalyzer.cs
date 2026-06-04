@@ -48,6 +48,13 @@
                 Identifier x = nameTable.FindByName(LexicalAnalyzer.CurrentName);
                 if (!x.Equals(default(Identifier)) && x.Category == tCat.Var)
                 {
+                    // Проверяем, что переменная была инициализирована (тип не Undefined)
+                    if (x.Type == tType.Undefined)
+                    {
+                        throw new Exception(
+                            $"Ошибка: Переменная '{x.Name}' не инициализирована. Невозможно вывести значение.");
+                    }
+
                     CodeGenerator.AddInstruction("mov ax, " + LexicalAnalyzer.CurrentName);
                     CodeGenerator.AddInstruction("CALL PRINT");
                     LexicalAnalyzer.ParseNextLexem();
@@ -89,7 +96,6 @@
                     else
                     {
                         variables.Add(variableName);
-                        // Все переменные целочисленные по умолчанию
                         break;
                     }
                 }
@@ -99,8 +105,8 @@
                 }
             }
 
-            // Добавляем все переменные в таблицу имен
-            variables.ForEach(variable => nameTable.AddIdentifier(variable, tCat.Var, tType.Int));
+            // Все переменные создаются с типом Undefined
+            variables.ForEach(variable => nameTable.AddIdentifier(variable, tCat.Var, tType.Undefined));
         }
 
         /// <summary>
@@ -130,7 +136,12 @@
                     LexicalAnalyzer.ParseNextLexem();
 
                     CheckLexem(Lexems.Assign);
-                    ParseExpression();
+
+                    // Вычисляем тип выражения и генерируем код
+                    tType exprType = ParseExpression();
+
+                    // Устанавливаем или проверяем тип переменной
+                    nameTable.SetType(varName, exprType);
 
                     CodeGenerator.AddInstruction("pop ax");
                     CodeGenerator.AddInstruction("mov " + varName + ", ax");
@@ -143,66 +154,94 @@
         }
 
         /// <summary>
-        /// Парсит выражение
+        /// Парсит выражение и возвращает его тип.
         /// </summary>
-        private void ParseExpression()
+        private tType ParseExpression()
         {
-            ParseTerm();
+            tType type = ParseTerm();
 
             while (LexicalAnalyzer.CurrentLexem == Lexems.Sum ||
                    LexicalAnalyzer.CurrentLexem == Lexems.Subtract)
             {
                 Lexems op = LexicalAnalyzer.CurrentLexem;
                 LexicalAnalyzer.ParseNextLexem();
-                ParseTerm();
+                tType rightType = ParseTerm();
+
+                if (type != tType.Int || rightType != tType.Int)
+                    Error();
 
                 if (op == Lexems.Sum)
                     CodeGenerator.AddSumInstruction();
                 else if (op == Lexems.Subtract)
                     CodeGenerator.AddSubtractInstruction();
             }
+
+            return type;
         }
 
         /// <summary>
-        /// Парсит терм (умножение, деление, унарный минус, подвыражение)
+        /// Парсит терм и возвращает его тип.
         /// </summary>
-        private void ParseTerm()
+        private tType ParseTerm()
         {
-            ParseFactor();
+            tType type = ParseFactor();
 
             while (LexicalAnalyzer.CurrentLexem == Lexems.Multiplication ||
                    LexicalAnalyzer.CurrentLexem == Lexems.Division)
             {
                 Lexems op = LexicalAnalyzer.CurrentLexem;
                 LexicalAnalyzer.ParseNextLexem();
-                ParseFactor();
+                tType rightType = ParseFactor();
+
+                if (type != tType.Int || rightType != tType.Int)
+                    Error();
 
                 if (op == Lexems.Multiplication)
                     CodeGenerator.AddMultiplicationInstruction();
                 else if (op == Lexems.Division)
                     CodeGenerator.AddDivisionInstruction();
             }
+
+            return type;
         }
 
         /// <summary>
-        /// Парсит фактор (операнд, унарный минус, скобки)
+        /// Парсит фактор и возвращает его тип.
         /// </summary>
-        private void ParseFactor()
+        /// <summary>
+        /// Парсит фактор и возвращает его тип.
+        /// </summary>
+        private tType ParseFactor()
         {
             if (LexicalAnalyzer.CurrentLexem == Lexems.Subtract)
             {
                 // Унарный минус
                 LexicalAnalyzer.ParseNextLexem();
-                ParseFactor();
+                tType type = ParseFactor();
+
+                if (type != tType.Int)
+                    Error();
+
                 CodeGenerator.AddUnaryMinusInstruction();
+                return tType.Int;
             }
             else if (LexicalAnalyzer.CurrentLexem == Lexems.Name)
             {
                 Identifier x = nameTable.FindByName(LexicalAnalyzer.CurrentName);
                 if (!x.Equals(default(Identifier)) && x.Category == tCat.Var)
                 {
+                    // Если переменная ещё не инициализирована — ошибка
+                    if (x.Type == tType.Undefined)
+                    {
+                        throw new Exception(
+                            $"Ошибка: Переменная '{x.Name}' не инициализирована. " +
+                            $"Нельзя использовать неинициализированную переменную в выражении.");
+                    }
+
                     CodeGenerator.AddExtractValueInstruction();
+                    tType varType = x.Type;
                     LexicalAnalyzer.ParseNextLexem();
+                    return varType;
                 }
                 else
                 {
@@ -213,17 +252,20 @@
             {
                 CodeGenerator.AddLoadIntegerInstruction(LexicalAnalyzer.CurrentName);
                 LexicalAnalyzer.ParseNextLexem();
+                return tType.Int;
             }
             else if (LexicalAnalyzer.CurrentLexem == Lexems.LeftBracket)
             {
                 LexicalAnalyzer.ParseNextLexem();
-                ParseExpression();
+                tType type = ParseExpression();
                 CheckLexem(Lexems.RightBracket);
+                return type;
             }
             else
             {
                 Error();
             }
+            return tType.Int;  // ← заменил None на Int
         }
 
         /// <summary>
